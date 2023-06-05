@@ -2,11 +2,11 @@ import React from "react";
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import Home from "./Home";
 import About from "./About";
-import UserProfile from "./UserProfile";
 import NoMatch from "./NoMatch";
 import BackButton from "./BackButton";
 import ForwardButton from "./ForwardButton";
 import GoHomeButton from "./GoHomeButton";
+import User from "./User";
 import "./App.css";
 
 function App() {
@@ -25,7 +25,7 @@ function App() {
           <About />
         </Route>
         <Route path="/users/:userId">
-          <UserProfile />
+          <User />
         </Route>
         <Route>
           <NoMatch />
